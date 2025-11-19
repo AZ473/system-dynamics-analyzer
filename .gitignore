@@ -47,5 +47,6 @@ Thumbs.db
 htmlcov/
 
 # Streamlit
-.streamlit/
+.streamlit/*
+!.streamlit/config.toml
 
