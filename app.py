@@ -138,15 +138,36 @@ def format_quadrant_analysis(quad_data):
                 st.write("📏")
 
 st.set_page_config(
-    page_title="Analyse Systèmes Dynamiques", 
+    page_title="Analyse Qualitative de Systèmes Dynamiques - Outil Interactif", 
+    page_icon="🔬",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://github.com/AZ473/system-dynamics-analyzer',
+        'Report a bug': 'https://github.com/AZ473/system-dynamics-analyzer/issues',
+        'About': "Outil pédagogique pour l'analyse complète des systèmes dynamiques linéaires et non-linéaires"
+    }
 )
+
+# Métadonnées SEO
+st.markdown("""
+<meta name="description" content="Outil interactif gratuit pour analyser qualitativement les systèmes dynamiques linéaires et non-linéaires. Analyse des valeurs propres, vecteurs propres, isoclines, portraits de phase.">
+<meta name="keywords" content="systèmes dynamiques, analyse qualitative, valeurs propres, vecteurs propres, portrait de phase, isoclines, stabilité, mathématiques appliquées">
+<meta name="author" content="AZ473">
+""", unsafe_allow_html=True)
 
 st.markdown("""
 # 🔬 **Analyse Qualitative de Systèmes Dynamiques**
 
-*Outil pédagogique pour l'analyse complète des systèmes dynamiques linéaires et non-linéaires*
+*Outil pédagogique interactif et gratuit pour l'analyse complète des systèmes dynamiques linéaires et non-linéaires en 2D*
+
+**Fonctionnalités principales :**
+- 📊 Analyse des valeurs propres et classification des points fixes
+- 🧮 Calcul des vecteurs propres et sous-espaces (stable, instable, centre)
+- 📈 Visualisation des isoclines orientées
+- 🧭 Analyse par quadrant du comportement du système
+- 🎨 Génération de portraits de phase complets
+- 📄 Export de rapports PDF détaillés
 
 ---
 
